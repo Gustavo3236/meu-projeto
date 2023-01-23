@@ -1,0 +1,41 @@
+@import url("./assets/css/cabecalho.css");
+@import url("./assets/css/menu.css");
+@import url("./assets/css/menu-lateral.css");
+@import url("./assets/css/principal.css");
+@import url("./assets/css/videos.css");
+@import url("./assets/css/rodape.css");
+
+:root {
+    --preto: #000000;
+    --cinza: #aaaaaa;
+    --branco: #FFFFFF;
+    --fonte-principal: 'Roboto';
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "aside header header"
+        "aside main main"
+        "footer footer footer"
+    ;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: auto auto 20vh;
+    font-family: var(--fonte-principal), sans-serif;
+}
+
+.cabecalho {
+    grid-area: header;
+}
+
+.menu-lateral {
+    grid-area: aside;
+}
+
+.principal {
+    grid-area: main;
+}
+
+.rodape {
+    grid-area: footer;
+}
