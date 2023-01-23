@@ -1,0 +1,6 @@
+.rodape {
+    background-color: var(--cinza);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
